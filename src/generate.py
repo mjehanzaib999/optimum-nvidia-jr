@@ -1,5 +1,5 @@
 #- from transformers import AutoModelForCausalLM
-from nvidia import AutoModelForCausalLM
+from optimum.nvidia import AutoModelForCausalLM
 from transformers import AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf", padding_side="left")
