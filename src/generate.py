@@ -2,10 +2,10 @@
 from optimum.nvidia import AutoModelForCausalLM
 from transformers import AutoTokenizer
 
-tokenizer = AutoTokenizer.from_pretrained("mistralai/Mixtral-8x7B-Instruct-v0.1", padding_side="left")
+tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.2", padding_side="left")
 
 model = AutoModelForCausalLM.from_pretrained(
-  "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "mistralai/Mistral-7B-Instruct-v0.2",
     use_fp8=True, 
     
 )

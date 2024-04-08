@@ -54,6 +54,7 @@ class AutoModelForCausalLM(ModelHubMixin):
         if config is None:
             raise ValueError("Unable to determine the model type with config = None")
 
+        print(config)
         model_type, _ = extract_model_type(config)
         print('Model type', model_type)
         if model_type is None:
